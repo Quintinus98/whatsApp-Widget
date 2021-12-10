@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sniglet:wght@400;800&family=Source+Code+Pro:wght@500&display=swap');
+
+:root{
+  --Snigle-font: 'Sniglet', cursive;
+  --Garamond: 'EB Garamond', serif;
+  --CodePro: 'Source Code Pro', monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.form.row {
+  margin-top: 2rem;
+}
+.form-holder button i{
+  padding-right: 0.2em;
+}
+.headingstyle2{
+  font-family: var(--Snigle-font);
+} 
+.form-holder h4 {
+  margin: 0;
+  margin-left: 0.8em;
+  font-family: var(--Garamond);
+  display: inline-flex;
+}
+.form-holder .bi-x-lg{
+  float: right;
+  font-size: 1.1em;
+  margin-right: 0.7em;
+  cursor: pointer;
+  color: #ddd;
+  margin: 0.4;
+  align-items: center;
+  justify-content: center;
+}
+.bi-x-lg{
+  color: #ffffff;
+}
+.myrow{
+  display: flex;
+}
+.mycol1{
+  padding: 0.45em 0;
+  width: 84%;
+  border: none;
+}
+.mycol2{
+  width: 16%;
+  padding: 0.45em 0.1em 0.45em 0;
+  border: none;
+}
+.mycol2:hover {
+  background-color: #e7312ed7 !important;
+}
+.widget-container{
+  bottom: 50px;
+  right: 50px;
+  position: fixed;
+  z-index: 999;
+}
+.widget-icon-holder {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.widget-icon-holder:hover {
+  opacity: 0.9;
+}
+.widget-icon-holder i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.8em;
+  color: #ccc;
+}
+.form-holder{
+  z-index: 998;
+  background-color: #d6d6d6;
+  width: 278px;
+  height: 240px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  overflow-y: hidden;
+  display: none;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.show {
+  display: block;
+}
+.visuallyshow {
+  opacity: 1;
+}
